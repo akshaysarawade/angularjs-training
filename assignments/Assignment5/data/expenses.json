@@ -1,0 +1,34 @@
+[{
+	"transactionId": 1,
+	"payer": "me",
+	"payee": "Axis Long Term Equity Fund",
+	"category": "tax saving",
+	"subCategory": "",
+	"amount": 10000,
+	"dateOfTransaction": "2016-01-01 10:11",
+	"modeOfPayment": "cheque",
+	"notes": "cheque #: 200108",
+	"type": "Expense"
+}, {
+	"transactionId": 2,
+	"payer": "me",
+	"payee": "BNP Long Term Equity Fund",
+	"category": "tax saving",
+	"subCategory": "",
+	"amount": 40000,
+	"dateOfTransaction": "2016-01-01 10:11",
+	"modeOfPayment": "cheque",
+	"notes": "cheque #: 200109",
+	"type": "Expense"
+}, {
+	"transactionId": 3,
+	"payer": "me",
+	"payee": "ICICI Long Term Equity Fund",
+	"category": "tax saving",
+	"subCategory": "",
+	"amount": 30000,
+	"dateOfTransaction": "2016-01-01 10:11",
+	"modeOfPayment": "cheque",
+	"notes": "cheque #: 200110",
+	"type": "Expense"
+}]

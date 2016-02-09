@@ -1,0 +1,23 @@
+[{
+	"transactionId": 1,
+	"payer": "Globant India",
+	"payee": "me",
+	"category": "Salary",
+	"subCategory": "",
+	"amount": 200000,
+	"dateOfTransaction": "2016-02-11 07:14",
+	"modeOfPayment": "Electronic Transfer",
+	"notes": "test notes",
+	"type": "Income"
+}, {
+	"transactionId": 2,
+	"payer": "Globant India",
+	"payee": "me",
+	"category": "Salary",
+	"subCategory": "",
+	"amount": 15000,
+	"dateOfTransaction": "2016-02-11 07:14",
+	"modeOfPayment": "Electronic Transfer",
+	"notes": "test notes2",
+	"type": "Income"
+}]

@@ -1,0 +1,103 @@
+<div class="page-title">
+	<h3>Add An Expense</h3>
+	<form role="form" class="add-expense-form"  >
+		<div class="row">
+			<div class="col-lg-2">
+				<label class="control-label">Expense Payee: </label>
+			</div>
+			<div class="col-lg-4">
+				<input type="text" class="form-control" placeholder="" ng-model="expenseManagerCtrl.form.payee"/>
+			</div>
+		</div>
+		<br/>
+		
+		<div class="row">
+			<div class="col-lg-2">
+				<label class="control-label">Category: </label>
+			</div>
+			<div class="col-lg-4">
+				<select ng-model="expenseManagerCtrl.form.category">
+					<option value="Rent">Rent</option>
+					<option value="Travel">Travel</option>
+					<option value="Party">Party</option>
+					<option value="Office">Office</option>
+					<option value="Study">Study</option>
+					<option value="Shopping">Shopping</option>
+					<option value="Salary">Salary</option>
+				</select>
+			</div>
+		</div>
+		<br />
+		
+		<div class="row">
+			<div class="col-lg-2">
+				<label class="control-label">Sub Category: </label>
+			</div>
+			<div class="col-lg-4">
+				<select ng-model="expenseManagerCtrl.form.category">
+					<option value="Rent">Rent</option>
+					<option value="Travel">Travel</option>
+					<option value="Party">Party</option>
+					<option value="Office">Office</option>
+					<option value="Study">Study</option>
+					<option value="Shopping">Shopping</option>
+					<option value="Salary">Salary</option>
+				</select>
+			</div>
+		</div>
+		<br />
+		
+		<div class="row">
+			<div class="col-lg-2">
+				<label class="control-label">Expense Amount: </label>
+			</div>
+			<div class="col-lg-4">
+				<input type="number" min="0" max="10000" step="0.50" class="form-control" placeholder="" ng-model="expenseManagerCtrl.form.amount"/>
+			</div>
+		</div>
+		<br/>
+		
+		<div class="row">
+			<div class="col-lg-2">
+				<label class="control-label">Expense Date: </label>
+			</div>
+			<div class="col-lg-4">
+				<input type="datetime-local" class="form-control"  ng-model="expenseManagerCtrl.form.dateOfTransaction"/>
+			</div>
+		</div>
+		<br />
+		
+		<div class="row">
+			<div class="col-lg-2">
+				<label class="control-label">Mode of payment: </label>
+			</div>
+			<div class="col-lg-4 radio">
+				<label class="radio-inline"><input type="radio" name="optradio" value="Credit Card" ng-model="expenseManagerCtrl.form.modeOfPayment">Credit Card</label>
+				<label class="radio-inline"><input type="radio" name="optradio" value="Electronic Transfer" ng-model="expenseManagerCtrl.form.modeOfPayment">Electronic Transfer</label>
+				<label class="radio-inline"><input type="radio" name="optradio" value="Cheque" ng-model="expenseManagerCtrl.form.modeOfPayment">Cheque</label>
+			</div>
+		</div>
+		<br />
+		
+		<div class="row">
+			<div class="col-lg-2">
+				<label class="control-label">Notes: </label>
+			</div>
+			<div class="col-lg-4">
+				<input type="textarea" class="form-control" placeholder="" ng-model="expenseManagerCtrl.form.notes" maxlength="20"/>
+			</div>
+		</div>
+		<br />
+		
+		
+		<div class="row">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-4">
+				<button type="button" class="btn btn-primary btn-sm" ng-click="expenseManagerCtrl.saveFormData('expenseForm')">Save</button>
+				<button type="button" class="btn btn-primary btn-sm" ng-click="expenseManagerCtrl.clickFormButton('Reset')">Reset</button>
+				<button type="button" class="btn btn-primary btn-sm" ng-click="expenseManagerCtrl.clickFormButton('Cancel', 'expenseForm')">Cancel</button>
+			</div>		
+		</div>
+		
+	</form>
+</div><!-- Add expense form -->

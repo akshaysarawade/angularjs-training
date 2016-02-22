@@ -1,0 +1,34 @@
+<!-- Expense Table -->
+<div class="expense-table">
+	<h3>User Expenses</h3>
+	<button class="btn btn-primary btn-sm add-btn" ng-click="expenseManagerCtrl.showTemplate('showExpenseForm')"><span class="glyphicon glyphicon-plus"></span> Add Expense</button>
+	<br /><br />
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th>Payee</th>
+				<th>Category</th>
+				<th>Sub Category</th>
+				<th>Amount</th>
+				<th>Date of Transaction</th>
+				<th>Mode of Payment</th>
+				<th>Notes</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody ng-repeat="(key, expense) in expenseManagerCtrl.expenses">
+			<tr>
+				<td ng-bind="expense.payee"></td>
+				<td ng-bind="expense.category"></td>
+				<td ng-bind="expense.subCategory"></td>
+				<td ng-bind="expense.amount"></td>
+				<td ng-bind="expense.dateOfTransaction"></td>
+				<td ng-bind="expense.modeOfPayment"></td>
+				<td ng-bind="expense.notes"></td>
+				<td><button type="button" class="btn btn-warning btn-xs" ng-click="expenseManagerCtrl.showTemplate('showExpenseForm', expense, key)"><span class="glyphicon glyphicon-pencil"></span> Edit</button></td>
+				<td><button type="button" class="btn btn-danger btn-xs" ng-click="expenseManagerCtrl.deleteItem('expenses', key)"><span class="glyphicon glyphicon-trash"></span> Delete</button></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
